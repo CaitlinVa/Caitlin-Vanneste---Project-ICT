@@ -73,7 +73,7 @@
 			);
 		}
 
-		// Resets game-tracking properties for a new game.
+		// Resets the game properties to play a new game.
 		public void ResetGame()
 		{
 			MoveCounter = 0;
