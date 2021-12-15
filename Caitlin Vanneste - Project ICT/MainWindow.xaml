@@ -1,0 +1,23 @@
+﻿<Window x:Class="Caitlin_Vanneste___Project_ICT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Caitlin_Vanneste___Project_ICT"
+        mc:Ignorable="d"
+        		Title="Caitlin Vanneste - Tic Tac Toe" Height="400" Width="320" Closing="Window_Closing">
+    <Grid x:Name="grid_TicTacToe" Width="320" Background="Silver">
+        <Button x:Name="btn_Reset" Content="Reset" HorizontalAlignment="Center" Margin="138,338,147,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,2.715" Click="btn_Reset_Click"/>
+        <Rectangle x:Name="rectangle_UpperLeft" MouseLeftButtonDown="OnRectangleClick" Fill="White" HorizontalAlignment="Left" Height="100" Stroke="Black" VerticalAlignment="Top" Width="100" Margin="6,0,0,0" Uid="0"/>
+        <Rectangle x:Name="rectangle_UpperMiddle" MouseLeftButtonDown="OnRectangleClick" Fill="White" HorizontalAlignment="Left" Height="100" Margin="106,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" Uid="1"/>
+        <Rectangle x:Name="rectangle_UpperRight" MouseLeftButtonDown="OnRectangleClick" Fill="White" HorizontalAlignment="Left" Height="100" Margin="206,0,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" Uid="2"/>
+        <Rectangle x:Name="rectangle_CenterLeft" MouseLeftButtonDown="OnRectangleClick" Fill="White" HorizontalAlignment="Left" Height="100" Margin="6,100,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" Uid="3"/>
+        <Rectangle x:Name="rectangle_CenterMiddle" MouseLeftButtonDown="OnRectangleClick" Fill="White" HorizontalAlignment="Left" Height="100" Margin="106,100,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" Uid="4"/>
+        <Rectangle x:Name="rectangle_CenterRight" MouseLeftButtonDown="OnRectangleClick" Fill="White" HorizontalAlignment="Left" Height="100" Margin="206,100,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" Uid="5"/>
+        <Rectangle x:Name="rectangle_LowerLeft" MouseLeftButtonDown="OnRectangleClick" Fill="White" HorizontalAlignment="Left" Height="100" Margin="6,200,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" Uid="6"/>
+        <Rectangle x:Name="rectangle_LowerMiddle" MouseLeftButtonDown="OnRectangleClick" Fill="White" HorizontalAlignment="Left" Height="100" Margin="106,200,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" Uid="7"/>
+        <Rectangle x:Name="rectangle_LowerRight" MouseLeftButtonDown="OnRectangleClick" Fill="White" HorizontalAlignment="Left" Height="100" Margin="206,200,0,0" Stroke="Black" VerticalAlignment="Top" Width="100" Uid="8"/>
+        <Label x:Name="label_GameMessage" Content="Welcome to WPF Tic Tac Toe!" Margin="6,300,14,0" VerticalAlignment="Top" HorizontalAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" Width="300"/>
+        <ComboBox Name="cbxPortName" Margin="36,334,196,13" SelectionChanged="cbxPortName_SelectionChanged"></ComboBox>
+    </Grid>
+</Window>
